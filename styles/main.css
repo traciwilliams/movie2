@@ -399,7 +399,7 @@ option {
     width: 30%;
     padding: 10px;
     margin: 10px;
-    border-radius: 3px;
+    //border-radius: 3px;
     border: 1px solid #ccc;
 }
 
@@ -516,41 +516,291 @@ footer p {
 
 
 
-// @media only screen and (max-width: 480px) {
-//     .col { 
-//         /*margin: 1% 0 1% 0%;*/
-//         margin: 0;
-//     }
-// }
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(5,5,5,0.3);
+        box-shadow: 0 2px 10px #efefef;
+        z-index: 9999;
+    }
+
+    .form-container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,.2);
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    option {
+        width: 40%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    input[type=submit] {
+        padding: 10px 10px;
+        background-color: #e67e22;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+        
+    .hero-text-box {
+        //background-color: red;
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-text-box h1 {
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        //transform: translate(-50%, -50%);
+    }
+
+    .hero-title {
+        font-size: 200%;
+        font-weight: 300;
+    }
+
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(5,5,5,0.3);
+        box-shadow: 0 2px 10px #efefef;
+        z-index: 9999;
+    }
+
+    .form-container {
+        width: 80%;
+        margin: 0 auto;
+        color: #fff;
+        background-color: rgba(90,49,13,.7);
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    option {
+        width: 40%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    input[type=submit] {
+        padding: 10px 10px;
+        background-color: rgba(255,0,0,.2);
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
 
 
-// @media only screen and (min-width: 600px) {
-//     .col-m-1 { width: 8.33%; }
-//     .col-m-2 { width: 16.66%; }
-//     .col-m-3 { width: 25%; }
-//     .col-m-4 { width: 33.33%; }
-//     .col-m-5 { width: 41.66%; }
-//     .col-m-6 { width: 50%; }
-//     .col-m-7 { width: 58.33%; }
-//     .col-m-8 { width: 66.66%; }
-//     .col-m-9 { width: 75%; }
-//     .col-m-10 { width: 83.33%; }
-//     .col-m-11 { width: 91.66%; }
-//     .col-m-12 { width: 100%; }
-// }
+     .hero-text-box {
+        //background-color: red;
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
 
-// @media only screen and (min-width: 768px) {
-//     .col-1 { width: 8.33%; }
-//     .col-2 { width: 16.66%; }
-//     .col-3 { width: 25%; }
-//     .col-4 { width: 33.33%; }
-//     .col-5 { width: 41.66%; }
-//     .col-6 { width: 50%; }
-//     .col-7 { width: 58.33%; }
-//     .col-8 { width: 66.66%; }
-//     .col-9 { width: 75%; }
-//     .col-10 { width: 83.33%; }
-//     .col-11 { width: 91.66%; }
-//     .col-12 { width: 100%; }
-// }
+    .hero-text-box h1 {
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        //transform: translate(-50%, -50%);
+    }
+
+    .hero-title {
+        font-size: 200%;
+        font-weight: 300;
+    }
+
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(5,5,5,0.3);
+        box-shadow: 0 2px 10px #efefef;
+        z-index: 9999;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        background-color: rgba(90,49,13,.3);
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    option {
+        width: 40%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    input[type=submit] {
+        padding: 10px 10px;
+        background-color: rgba(255,0,0,.2);
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    
+     .hero-text-box {
+        //background-color: red;
+        position: absolute;
+        width: 100%;
+        text-align: left;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-text-box h1 {
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        //transform: translate(-50%, -50%);
+    }
+
+    .hero-title {
+        font-size: 160%;
+        font-weight: 300;
+    }
+
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(5,5,5,0.3);
+        box-shadow: 0 2px 10px #efefef;
+        z-index: 9999;
+    }
+    h1,
+    h2 {
+        font-size: 150%;
+    }
+
+    .how-section div:first-child {
+        padding-bottom: 50px;
+        text-align: center;
+
+    }
+
+
+
+    .how-paragraphs {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #64350b;
+        //background-color: blue;
+    }
+
+
+
+    .how-steps {
+        //background-color: red;
+        font-size: 150%;
+        color: #e67e22;
+        border: 2px solid #64350b;
+        display: inline-block;
+        display: block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-align: center; 
+    }
+
+    .how-paragraphs p {
+        padding: 10px 10px 40px 10px;
+        //display: block;
+        font-size: 100%;
+        //background-color: pink;
+    }
+
+    .cast-section {
+        display: none;
+    }
+
+
+
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        //background-color: rgba(90,49,13,.3);
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    option {
+        width: 90%;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    input[type=submit] {
+        padding: 10px 10px;
+        //background-color: rgba(255,0,0,.2);
+    }
+
+    footer {
+        color: #000;
+        background-color: #fff;
+    }
+
+    footer p {
+  
+        height: 10%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
 
